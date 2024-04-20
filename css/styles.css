@@ -1,78 +1,123 @@
-body {
+
+
+* {
   margin: 0;
   padding: 0;
 }
 
 header {
+  width: calc(100% - 156px - 156px);
+  padding-left: 156px;
+  padding-right: 156px;
   display: inline-flex; /* Set header to display inline */
-  width: 100%;
   height: 72px;
   align-items: center;
 }
 
-footer {
-  height: 312px;
-  background-color: #2e2f42;
-  align-content: center;
+header nav ul li {
+    margin-right: 40px;
 }
 
-.section-1 {
-  width: 100%;
-  height: 600px;
-  background-color: #2e2f42;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+header address ul li {
+    margin-left: 40px;
 }
 
-.section-1-text {
+.white {
+  color: #ffffff;
+}
+
+.title {
+  width: 496px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.width-264 {
+  width: 264px;
+}
+
+.header-1 {
   font-family: Roboto;
   font-size: 56px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.02em;
-  text-align: center;
-  color: #ffffff;
-  width: 496px;
 }
 
-.section-1-btn {
+.header-3 {
+font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+}
+
+footer {
+  width: calc(100% - 156px - 156px);
+  padding-left: 156px;
+  padding-right: 156px;
+  height: 312px;
+  background-color: #2e2f42;
+  align-content: center;
+}
+
+.section {
+  padding-left: 156px;
+  padding-right: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.height-600 {
+  height: 600px;
+}
+
+section + section{
+    margin-top: 120px;
+}
+
+.iris {
+  color: #4d5ae5;
+}
+
+.navy-blue-bg {
+  background-color: #2e2f42;
+}
+
+.navy-blue {
+  color: #2e2f42;
+}
+
+.btn-1 {
   width: Hug (169px) px;
   height: Hug (56px) px;
-  top: 428px;
-  left: 636px;
   padding: 16px 32px 16px 32px;
-  gap: 10px;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
-  background: #4d5ae5;
   box-shadow: 0px 4px 4px 0px #00000026;
-  color: #ffffff;
-  outline: none;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: left;
+  background-color: #4d5ae5;
 }
 
-.section-2 {
-  margin-top: 156px;
-  margin-bottom: 156px;
+.btn-1:hover {
+  background-color: #404bbf;
 }
 
-.section-2 ul {
+.features-ul {
   display: inline-flex;
-  margin-left: 156px;
-  margin-right: 156px;
   list-style: none;
   justify-content: space-evenly;
   align-content: center;
   padding: 0;
+}
+
+.features-ul li {
+  margin-right: 24px;
+}
+
+.features-ul li h3 {
+    margin-bottom: 8px;
 }
 
 .section-2 li {
@@ -101,27 +146,7 @@ footer {
   margin: 0;
 }
 
-.studio-header-text,
-.studio-footer-text,
-.web-text {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  margin-bottom: 16px;
-}
-
-.web-text {
-  color: #4d5ae5;
-}
-
-.studio-header-text {
-  color: #2e2f42;
-}
-
-.studio-footer-text {
+.cloud {
   color: #f4f4fd;
 }
 
@@ -131,41 +156,46 @@ header li {
 
 address {
   margin-left: auto; /* Push the address element to the right */
-  margin-right: 156px;
 }
 
-address a,
-nav a,
-.footer-text {
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-left: 40px;
+.inline-flex {
+  margin-left: 156px;
 }
 
-address a {
-  font-weight: 400;
-  color: #434455;
-}
-
-nav a {
-  font-weight: 500;
-  color: #2e2f42;
+.logo-div {
+  display: inline-flex;
+  margin-right: 76px;
 }
 
 .logo {
-  display: inline-flex; /* Set logo to display inline */
-  margin-left: 156px;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
 }
 
-.footer-text {
+.body {
+  font-family: Roboto;
+  font-size: 16px;
   font-weight: 400;
-  color: #f4f4fd;
-  margin-left: 156px;
-  margin-top: 0px;
-  width: 264px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.body-medium {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.slate {
+    color: #434455;
 }
