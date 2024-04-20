@@ -5,7 +5,15 @@ header {
   align-items: center;
 }
 
-.studio-text,
+footer {
+  height: 312px;
+  background-color: #2e2f42;
+  align-content: center;
+}
+
+
+.studio-header-text,
+.studio-footer-text,
 .web-text {
   font-family: Raleway;
   font-size: 18px;
@@ -13,14 +21,19 @@ header {
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-bottom: 16px;
 }
 
 .web-text {
   color: #4d5ae5;
 }
 
-.studio-text {
+.studio-header-text {
   color: #2e2f42;
+}
+
+.studio-footer-text {
+  color: #f4f4fd;
 }
 
 header li {
@@ -33,7 +46,8 @@ address {
 }
 
 address a,
-nav a {
+nav a,
+.footer-text {
   text-decoration: none;
   font-family: Roboto;
   font-size: 16px;
@@ -57,4 +71,12 @@ nav a {
 .logo {
   display: inline-flex; /* Set logo to display inline */
   margin-left: 156px;
+}
+
+.footer-text {
+  font-weight: 400;
+  color: #f4f4fd;
+  margin-left: 156px;
+  margin-top: 0px;
+  width: 264px;
 }
