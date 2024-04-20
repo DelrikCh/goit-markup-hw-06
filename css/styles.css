@@ -1,0 +1,60 @@
+header {
+  display: inline-flex; /* Set header to display inline */
+  width: 100%;
+  height: 72px;
+  align-items: center;
+}
+
+.studio-text,
+.web-text {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.web-text {
+  color: #4d5ae5;
+}
+
+.studio-text {
+  color: #2e2f42;
+}
+
+header li {
+  display: inline-flex; /* Set ul within header to display inline */
+}
+
+address {
+  margin-left: auto; /* Push the address element to the right */
+  margin-right: 156px;
+}
+
+address a,
+nav a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 40px;
+}
+
+address a {
+  font-weight: 400;
+  color: #434455;
+}
+
+nav a {
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.logo {
+  display: inline-flex; /* Set logo to display inline */
+  margin-left: 156px;
+}
