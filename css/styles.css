@@ -35,24 +35,22 @@ header address ul li {
 }
 
 .header-1 {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 56px;
-  font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.02em;
 }
 
 .header-2 {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 36px;
-  font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
 }
 
 .header-3 {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -202,16 +200,20 @@ address {
   letter-spacing: 0.03em;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  color: #000000;
+}
+
 .body {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
 
 .body-medium {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
