@@ -21,6 +21,10 @@ header address ul li {
   margin-left: 40px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .white {
   color: #ffffff;
 }
@@ -118,6 +122,11 @@ section + section {
 
 .btn-1:hover {
   background-color: #404bbf;
+}
+
+header address a:hover,
+header address a:active {
+  color: #404bbf;
 }
 
 .portfolio-buttons {
