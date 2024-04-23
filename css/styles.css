@@ -10,7 +10,7 @@ header {
   display: inline-flex; /* Set header to display inline */
   height: 72px;
   align-items: center;
-  border-bottom: 1px solid #E7E9FC
+  border-bottom: 1px solid #e7e9fc;
 }
 
 header nav ul li {
