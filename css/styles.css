@@ -3,30 +3,43 @@
   padding: 0;
 }
 
-header {
-  width: calc(100% - 156px - 156px);
-  padding-left: 156px;
-  padding-right: 156px;
-  display: inline-flex; /* Set header to display inline */
-  height: 72px;
-  align-items: center;
-  border-bottom: 1px solid #e7e9fc;
+.body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #000000;
 }
 
-header nav ul li {
-  margin-right: 40px;
+.body-medium {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-header address ul li {
-  margin-left: 40px;
+.header-1 {
+  font-family: inherit;
+  font-size: 56px;
+  line-height: 1.07142857143;
+  letter-spacing: 0.02em;
 }
 
-button {
-  cursor: pointer;
+.header-2 {
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
-.white {
-  color: #ffffff;
+.header-3 {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .title {
@@ -35,34 +48,29 @@ button {
   text-align: center;
 }
 
+.header {
+  width: calc(100% - 156px - 156px);
+  padding-left: 156px;
+  padding-right: 156px;
+  display: inline-flex;
+  height: 72px;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav-list {
+  margin-right: 40px;
+}
+
+.header-address-list {
+  margin-left: 40px;
+}
+
 .width-264 {
   width: 264px;
 }
 
-h1 {
-  font-family: inherit;
-  font-size: 56px;
-  line-height: 1.07142857143;
-  letter-spacing: 0.02em;
-}
-
-h2 {
-  font-family: inherit;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-h3 {
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-footer {
+.footer {
   width: calc(100% - 156px - 156px);
   padding-left: 156px;
   padding-right: 156px;
@@ -75,7 +83,7 @@ footer {
   margin-top: 16px;
 }
 
-section {
+.section {
   padding-left: 156px;
   padding-right: 156px;
   display: flex;
@@ -88,7 +96,7 @@ section {
   height: 600px;
 }
 
-section + section {
+.section + .section {
   margin-top: 120px;
 }
 
@@ -118,14 +126,30 @@ section + section {
   opacity: 0px;
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: #4d5ae5;
+  cursor: pointer;
 }
 
-.btn-1:hover {
+.btn-2 {
+  padding: 12px 24px 12px 24px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #e7e9fc;
+  cursor: pointer;
+}
+
+.btn-1:hover, .btn-2:hover {
   background-color: #404bbf;
+  color: #FFFFFF;
 }
 
-header address a:hover,
-header address a:active {
+.header-link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.header-link:hover,
+.header-link:active {
   color: #404bbf;
 }
 
@@ -136,16 +160,7 @@ header address a:active {
   margin-top: 96px;
 }
 
-.btn-2 {
-  padding: 12px 24px 12px 24px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-  opacity: 0px;
-  border: 1px solid #e7e9fc;
-}
-
-ul {
-  display: inline-flex;
+.clear-ul {
   list-style: none;
   align-content: center;
 }
@@ -191,19 +206,15 @@ ul {
   text-align: center;
 }
 
-.cloud {
-  color: #f4f4fd;
-}
-
 .cloud-bg {
   background-color: #f4f4fd;
 }
 
-header li {
+.inline-flex {
   display: inline-flex; /* Set ul within header to display inline */
 }
 
-address {
+.header-address {
   margin-left: auto; /* Push the address element to the right */
 }
 
@@ -218,27 +229,6 @@ address {
   font-size: 18px;
   line-height: 1.16666666667;
   letter-spacing: 0.03em;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.body-medium {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-a {
-  text-decoration: none;
-  font-style: normal;
 }
 
 .slate {
@@ -274,4 +264,12 @@ a {
 
 .grid-item-text h3 {
   margin-bottom: 8px;
+}
+
+.cloud {
+  color: #f4f4fd;
+}
+
+.white {
+  color: #ffffff;
 }
