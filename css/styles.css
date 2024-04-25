@@ -266,6 +266,10 @@
   margin-bottom: 8px;
 }
 
+.link-no-decoration {
+  text-decoration: none;
+}
+
 .cloud {
   color: #f4f4fd;
 }
