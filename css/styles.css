@@ -3,6 +3,41 @@
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
 .body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -44,18 +79,20 @@
 
 .title {
   width: 496px;
-  margin-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 .header {
-  width: calc(100% - 156px - 156px);
+  min-width: calc(100%);
   padding-left: 156px;
   padding-right: 156px;
   display: inline-flex;
   height: 72px;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
+  overflow: hidden;
 }
 
 .header-nav-list {
@@ -67,14 +104,14 @@
 }
 
 .width-264 {
-  width: 264px;
+  max-width: 264px;
 }
 
 .footer {
-  width: calc(100% - 156px - 156px);
+  width: calc(100%);
   padding-left: 156px;
   padding-right: 156px;
-  height: 312px;
+  min-height: 312px;
   background-color: #2e2f42;
   align-content: center;
 }
@@ -101,6 +138,8 @@
 }
 
 .btn-1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
   padding: 16px 32px 16px 32px;
   border-radius: 4px 0px 0px 0px;
   opacity: 0px;
@@ -118,9 +157,10 @@
   cursor: pointer;
 }
 
-.btn-1:hover, .btn-2:hover {
+.btn-1:hover,
+.btn-2:hover {
   background-color: #404bbf;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-link {
@@ -183,12 +223,8 @@
   text-align: center;
 }
 
-.inline-flex {
-  display: inline-flex; /* Set ul within header to display inline */
-}
-
 .header-address {
-  margin-left: auto; /* Push the address element to the right */
+  margin-left: auto;
 }
 
 .logo-div {
@@ -213,12 +249,14 @@
 }
 
 .grid-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
   row-gap: 48px;
   column-gap: 24px;
-  grid-template-columns: repeat(3, 1fr);
+  padding-top: 72px;
   margin-bottom: 120px;
-  margin-top: 72px;
 }
 
 .grid-item-text {

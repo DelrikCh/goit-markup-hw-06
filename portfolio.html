@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Effective Solutions for Your Business</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,154 +26,160 @@
 
     <main>
       <section class="section">
-        <h1 class="header-1" hidden>Portfolio</h1>
-        <ul class="portfolio-buttons clear-ul inline-flex">
-          <li>
-            <button type="button" class="btn-2 ocean-bg white">All</button>
-          </li>
-          <li>
-            <button type="button" class="btn-2 cloud-bg iris">Web Site</button>
-          </li>
-          <li>
-            <button type="button" class="btn-2 cloud-bg iris">App</button>
-          </li>
-          <li>
-            <button type="button" class="btn-2 cloud-bg iris">Design</button>
-          </li>
-          <li>
-            <button type="button" class="btn-2 cloud-bg iris">Marketing</button>
-          </li>
-        </ul>
-        <ul class="grid-container clear-ul">
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-1.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-1"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">
-                  Banking App Interface Concept
-                </h2>
-                <p class="slate">App</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-2.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-2"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Cashless Payment</h2>
-                <p class="slate">Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-3.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-3"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Meditation App</h2>
-                <p class="slate">App</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-4.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-4"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Taxi Service</h2>
-                <p class="slate">Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-5.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-5"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Screen Illustrations</h2>
-                <p class="slate">Design</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-6.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-6"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Online Courses</h2>
-                <p class="slate">Marketing</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-7.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-7"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Instagram Stories Concept</h2>
-                <p class="slate">Design</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-8.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-8"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Organic Food</h2>
-                <p class="slate">Web Site</p>
-              </div>
-            </a>
-          </li>
-          <li class="grid-item">
-            <a class="link-no-decoration" href="">
-              <img
-                src="images/portfolio/img-9.jpg"
-                width="360"
-                height="300"
-                alt="Portfolio-9"
-              />
-              <div class="grid-item-text">
-                <h2 class="header-3 navy-blue">Fresh Coffee</h2>
-                <p class="slate">Web Site</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="container flex-container flex-direction-col">
+          <h1 class="header-1 visually-hidden">Portfolio</h1>
+          <ul class="portfolio-buttons clear-ul">
+            <li>
+              <button type="button" class="btn-2 ocean-bg white">All</button>
+            </li>
+            <li>
+              <button type="button" class="btn-2 cloud-bg iris">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn-2 cloud-bg iris">App</button>
+            </li>
+            <li>
+              <button type="button" class="btn-2 cloud-bg iris">Design</button>
+            </li>
+            <li>
+              <button type="button" class="btn-2 cloud-bg iris">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="grid-container clear-ul">
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-1.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-1"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="slate">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-2.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-2"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Cashless Payment</h2>
+                  <p class="slate">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-3.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-3"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Meditation App</h2>
+                  <p class="slate">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-4.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-4"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Taxi Service</h2>
+                  <p class="slate">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-5.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-5"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Screen Illustrations</h2>
+                  <p class="slate">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-6.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-6"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Online Courses</h2>
+                  <p class="slate">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-7.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-7"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Instagram Stories Concept</h2>
+                  <p class="slate">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-8.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-8"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Organic Food</h2>
+                  <p class="slate">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="grid-item">
+              <a class="link-no-decoration" href="">
+                <img
+                  src="images/portfolio/img-9.jpg"
+                  width="360"
+                  height="300"
+                  alt="Portfolio-9"
+                />
+                <div class="grid-item-text">
+                  <h2 class="header-3 navy-blue">Fresh Coffee</h2>
+                  <p class="slate">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
