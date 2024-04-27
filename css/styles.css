@@ -96,11 +96,11 @@
 }
 
 .header-nav-list {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .header-address-list {
-  margin-left: 40px;
+  gap: 40px;
 }
 
 .width-264 {
@@ -185,8 +185,8 @@
   align-content: center;
 }
 
-.features-li {
-  margin-right: 24px;
+.features-ul {
+  gap: 24px;
 }
 
 .features-header {
@@ -195,14 +195,12 @@
 
 .services-ul {
   margin-top: 72px;
-}
-
-.services-li {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .team-ul {
   margin-top: 72px;
+  gap: 24px;
 }
 
 .team-li {
@@ -210,7 +208,6 @@
   box-shadow: 0px 2px 1px 0px #2e2f4214;
   box-shadow: 0px 1px 1px 0px #2e2f4229;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
-  margin-right: 24px;
 }
 
 .team-header {
@@ -229,7 +226,14 @@
 
 .logo-div {
   display: inline-flex;
-  margin-right: 76px;
+}
+
+.header .container {
+  gap: 76px;
+}
+
+.footer .container {
+  gap: 76px;
 }
 
 .logo {
