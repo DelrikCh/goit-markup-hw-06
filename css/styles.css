@@ -18,10 +18,10 @@
 
 .container {
   width: 1158px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container {
@@ -57,7 +57,7 @@
 .header-1 {
   font-family: inherit;
   font-size: 56px;
-  line-height: 1.07142857143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
@@ -79,18 +79,11 @@
 
 .title {
   width: 496px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 48px;
   text-align: center;
 }
 
 .header {
-  padding-left: 156px;
-  padding-right: 156px;
-  display: inline-flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -107,12 +100,9 @@
 }
 
 .footer {
-  padding-left: 156px;
-  padding-right: 156px;
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: #2e2f42;
-  align-content: center;
 }
 
 .footer-tagline {
@@ -120,24 +110,27 @@
 }
 
 .section {
-  padding-left: 156px;
-  padding-right: 156px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
-.title-section {
+.section-title {
   padding-bottom: 188px;
   padding-top: 188px;
 }
 
+.section-features {
+  padding-bottom: 120px;
+}
+
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .btn-1 {
-  margin-top: 24px;
-  margin-bottom: 24px;
   padding: 16px 32px 16px 32px;
-  border-radius: 4px 0px 0px 0px;
+  border: none;
   opacity: 0px;
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: #4d5ae5;
@@ -184,7 +177,7 @@
   gap: 24px;
 }
 
-.features-header {
+.features-header, .portfolio-header {
   margin-bottom: 8px;
 }
 
@@ -203,6 +196,7 @@
   box-shadow: 0px 2px 1px 0px #2e2f4214;
   box-shadow: 0px 1px 1px 0px #2e2f4229;
   box-shadow: 0px 1px 6px 0px #2e2f4214;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-header {
@@ -210,16 +204,26 @@
 }
 
 .team-ul-text {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
+}
+
+.team-img {
+  display: block;
 }
 
 .header-address {
   margin-left: auto;
 }
 
-.logo-div {
+.logo-header {
+  display: inline-flex;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.logo-footer {
   display: inline-flex;
 }
 
@@ -235,20 +239,8 @@
   font-family: Raleway;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16666666667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-}
-
-.padding-bottom-120 {
-  padding-bottom: 120px;
-}
-
-.padding-top-120 {
-  padding-top: 120px;
-}
-
-.padding-top-96 {
-  padding-top: 96px;
 }
 
 .grid-container {
