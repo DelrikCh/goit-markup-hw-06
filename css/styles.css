@@ -119,7 +119,7 @@
   padding-top: 188px;
 }
 
-.section-features {
+.section-services {
   padding-bottom: 120px;
 }
 
@@ -179,6 +179,10 @@
 
 .features-header, .portfolio-header {
   margin-bottom: 8px;
+}
+
+.features-li {
+  width: calc((100% - 72px) / 4);
 }
 
 .services-ul {
