@@ -1,5 +1,4 @@
 import './initIcons.js';
-import './modal.js';
 
 // Function to add 'current' class to the active link
 function setActiveNavLink() {
