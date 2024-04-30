@@ -2,7 +2,10 @@ import './initIcons.js';
 
 // Function to add 'current' class to the active link
 function setActiveNavLink() {
-  const currentPageUrl = window.location.pathname;
+  let currentPageUrl = window.location.pathname;
+  if (currentPageUrl === '/') {
+    currentPageUrl = '/index.html';
+  }
 
   const navLinks = document.querySelectorAll('.header-link');
 
@@ -15,7 +18,7 @@ function setActiveNavLink() {
       link.classList.remove('current');
     }
   });
-};
+}
 
 (function() {
 // Fetch header
@@ -27,5 +30,5 @@ fetch('header.html').then(response => response.text()).then(html => {
 // Fetch footer
 fetch('footer.html').then(response => response.text()).then(html => {
   document.getElementById('footerContainer').innerHTML = html;
-})
-}());
+});
+})();
