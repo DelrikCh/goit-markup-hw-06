@@ -1,4 +1,5 @@
 import './initIcons.js';
+import './modal.js';
 
 // Function to add 'current' class to the active link
 function setActiveNavLink() {
@@ -15,8 +16,9 @@ function setActiveNavLink() {
       link.classList.remove('current');
     }
   });
-}
+};
 
+(function() {
 // Fetch header
 fetch('header.html').then(response => response.text()).then(html => {
   document.getElementById('headerContainer').innerHTML = html;
@@ -26,4 +28,5 @@ fetch('header.html').then(response => response.text()).then(html => {
 // Fetch footer
 fetch('footer.html').then(response => response.text()).then(html => {
   document.getElementById('footerContainer').innerHTML = html;
-});
+})
+}());

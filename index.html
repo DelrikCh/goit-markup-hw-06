@@ -24,7 +24,7 @@
           <h1 class="header-1 white title">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn-1 white">Order Service</button>
+          <button class="btn-1 white" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="section">
@@ -368,6 +368,16 @@
         </div>
       </section>
     </main>
+    <!-- TODO -->
+    <div class="order-modal is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <div id="footerContainer"></div>
   </body>
