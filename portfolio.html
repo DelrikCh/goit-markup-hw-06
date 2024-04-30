@@ -12,17 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/init.js" type="module"></script>
   </head>
 
   <body class="body">
     <div id="headerContainer"></div>
-    <script>
-      fetch('./header.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('headerContainer').innerHTML = html;
-        });
-    </script>
 
     <main>
       <section class="section-portfolio">
@@ -209,12 +203,5 @@
     </main>
 
     <div id="footerContainer"></div>
-    <script>
-      fetch('./footer.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('footerContainer').innerHTML = html;
-        });
-    </script>
   </body>
 </html>

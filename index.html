@@ -12,20 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/init.js" type="module"></script>
   </head>
 
   <body class="body">
     <div id="headerContainer"></div>
-    <script>
-      fetch('header.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('headerContainer').innerHTML = html;
-        });
-    </script>
 
     <main>
-      <section class="section-title navy-blue-bg">
+      <section class="section-title">
         <div class="container flex-container flex-direction-col">
           <h1 class="header-1 white title">
             Effective Solutions for Your Business
@@ -33,12 +27,16 @@
           <button class="btn-1 white">Order Service</button>
         </div>
       </section>
-
       <section class="section">
         <div class="container">
           <h2 class="header-2 visually-hidden">Features</h2>
           <ul class="features-ul clear-ul flex-container">
             <li class="features-li">
+              <div class="features-icon">
+                <svg width="64" height="64">
+                  <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="header-3 features-header navy-blue">Strategy</h3>
               <p class="slate">
                 Our goal is to identify the business problem to walk away with
@@ -46,6 +44,11 @@
               </p>
             </li>
             <li class="features-li">
+              <div class="features-icon">
+                <svg width="64" height="64">
+                  <use xlink:href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3 class="header-3 features-header navy-blue">Punctuality</h3>
               <p class="slate">
                 Bring the key message to the brand's audience for the best price
@@ -53,6 +56,11 @@
               </p>
             </li>
             <li class="features-li">
+              <div class="features-icon">
+                <svg width="64" height="64">
+                  <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="header-3 features-header navy-blue">Diligence</h3>
               <p class="slate">
                 Research and confirm brands that present the strongest digital
@@ -60,6 +68,11 @@
               </p>
             </li>
             <li class="features-li">
+              <div class="features-icon">
+                <svg width="64" height="64">
+                  <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="header-3 features-header navy-blue">Technologies</h3>
               <p class="slate">
                 Design practice focused on digital experiences. We bring forth a
@@ -117,6 +130,45 @@
               <div class="team-ul-text">
                 <h3 class="header-3 team-header navy-blue">Mark Guerrero</h3>
                 <p class="slate">Product Designer</p>
+                <ul class="team-icons-ul">
+                  <li class="team-icons-li">
+                    <a
+                      class="team-icons-link"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://twitter.com/">
+                      <svg width="16" height="16">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.facebook.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.linkedin.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-li">
@@ -130,6 +182,45 @@
               <div class="team-ul-text">
                 <h3 class="header-3 team-header navy-blue">Tom Ford</h3>
                 <p class="slate">Frontend Developer</p>
+                <ul class="team-icons-ul">
+                  <li class="team-icons-li">
+                    <a
+                      class="team-icons-link"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://twitter.com/">
+                      <svg width="16" height="16">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.facebook.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.linkedin.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-li">
@@ -143,6 +234,45 @@
               <div class="team-ul-text">
                 <h3 class="header-3 team-header navy-blue">Camila Garcia</h3>
                 <p class="slate">Marketing</p>
+                <ul class="team-icons-ul">
+                  <li class="team-icons-li">
+                    <a
+                      class="team-icons-link"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://twitter.com/">
+                      <svg width="16" height="16">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.facebook.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.linkedin.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-li">
@@ -156,7 +286,83 @@
               <div class="team-ul-text">
                 <h3 class="header-3 team-header navy-blue">Daniel Wilson</h3>
                 <p class="slate">UI Designer</p>
+                <ul class="team-icons-ul">
+                  <li class="team-icons-li">
+                    <a
+                      class="team-icons-link"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://twitter.com/">
+                      <svg width="16" height="16">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.facebook.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons-li">
+                    <a class="team-icons-link" href="https://www.linkedin.com/">
+                      <svg width="16" height="16">
+                        <use
+                          xlink:href="./images/icons.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="header-2 navy-blue">Customers</h2>
+          <ul class="customers-ul">
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-1"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-2"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-3"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-4"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-5"></use>
+              </svg>
+            </li>
+            <li class="customers-li">
+              <svg width="104" height="56">
+                <use xlink:href="./images/icons.svg#icon-logo-client-6"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -164,12 +370,5 @@
     </main>
 
     <div id="footerContainer"></div>
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('footerContainer').innerHTML = html;
-        });
-    </script>
   </body>
 </html>
