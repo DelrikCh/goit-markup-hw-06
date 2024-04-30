@@ -149,6 +149,12 @@
   opacity: 0px;
   border: 1px solid #e7e9fc;
   cursor: pointer;
+  color: #4d5ae5;
+}
+
+.btn-2-active {
+  background-color: #404BBF;
+  color: #ffffff;
 }
 
 .btn-1:hover,
