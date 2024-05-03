@@ -3,14 +3,17 @@ import './initIcons.js';
 // Function to add 'current' class to the active link
 function setActiveNavLink() {
   let currentPageUrl = window.location.pathname;
-  if (currentPageUrl === '/') {
-    currentPageUrl = '/index.html';
+  currentPageUrl =
+      currentPageUrl.substring(currentPageUrl.lastIndexOf('/') + 1);
+  if (currentPageUrl === '') {
+    currentPageUrl = 'index.html';
   }
 
   const navLinks = document.querySelectorAll('.header-link');
 
   navLinks.forEach(link => {
-    const linkUrl = link.getAttribute('href');
+    let linkUrl = link.getAttribute('href');
+    linkUrl = linkUrl.substring(linkUrl.lastIndexOf('/') + 1);
 
     if (linkUrl === currentPageUrl) {
       link.classList.add('current');
