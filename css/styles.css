@@ -505,7 +505,11 @@ input[type='checkbox']:checked
 
 .footer .container {
   display: flex;
-  gap: 120px;
+}
+
+.social-footer {
+  margin-left: 120px;
+  margin-right: 80px;
 }
 
 .footer-media-ul {
