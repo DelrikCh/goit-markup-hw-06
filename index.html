@@ -465,14 +465,33 @@
               </div>
             </div>
           </div>
-
+          <!-- Checkbox -->
           <div>
-            <input type="checkbox" id="agree" name="agree" required />
-            <label for="agree" class="small-text light-slate">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="order-modal-checkbox"
+              name="order-modal-checkbox"
+              value="I accept the terms and conditions of the Privacy Policy"
+              required
+            />
+            <label class="agreement-label-checkbox" for="order-modal-checkbox">
+              <span class="agreement-checkbox">
+                <svg class="order-modal-icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a>
+              <a
+                class="agreement-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
             </label>
           </div>
+          <!--  -->
           <div class="submit-container">
             <button class="btn-1 submit-btn white" type="submit">Send</button>
           </div>
