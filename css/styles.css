@@ -459,9 +459,11 @@ input[type='checkbox']:checked
 
 /* --- */
 
-.submit-container {
-  display: flex;
+.order-form {
   justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -484,6 +486,7 @@ input[type='checkbox']:checked
 .submit-btn {
   padding: 16px 32px 16px 32px;
   width: 169px;
+  margin-top: 24px;
 }
 
 .header-address {
