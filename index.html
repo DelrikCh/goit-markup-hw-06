@@ -12,18 +12,166 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <script defer src="./js/init.js" type="module"></script>
   </head>
 
   <body class="body">
-    <div id="headerContainer"></div>
+    <div id="headerContainer" class="visually-hidden"></div>
+    <header class="header">
+      <div class="container flex-container flex-direction-row">
+        <a href="./index.html">
+          <div class="logo-header">
+            <p class="logo iris">WEB</p>
+            <p class="logo navy-blue">STUDIO</p>
+          </div>
+        </a>
+        <nav class="header-nav">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <ul class="body-medium clear-ul flex-direction-row header-nav-list">
+            <li>
+              <a
+                class="navy-blue header-link header-nav-link current"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a
+                class="navy-blue header-link header-nav-link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="navy-blue header-link header-nav-link" href="#"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="body clear-ul header-address-list">
+            <li>
+              <a class="slate header-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="slate header-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-container js-close-menu">
+        <svg class="mobile-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <ul class="mobile-menu" id="mobile-menu">
+          <li class="mobile-menu-li">
+            <a class="mobile-menu-link current" href="index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-li">
+            <a class="mobile-menu-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu-li">
+            <a class="mobile-menu-link" href="contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-contacts">
+        <address class="mobile-menu-link-adr">
+          <ul class="mobile-contacts-list">
+            <li>
+              <a class="mobile-contacts-phone-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="mobile-contacts-email-link"
+                href="mailto:info@dewstudio.com"
+                >info@dewstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="mobile-social">
+        <ul class="mobile-social-list">
+          <li class="mobile-social-list-li">
+            <a
+              class="mobile-social-list-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to instagram.com"
+              ><svg class="mobile-social-list-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-list-li">
+            <a
+              class="mobile-social-list-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to twitter.com"
+              ><svg class="mobile-social-list-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-list-li">
+            <a
+              class="mobile-social-list-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to facebook.com"
+              ><svg class="mobile-social-list-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-list-li">
+            <a
+              class="mobile-social-list-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to linkedin.com"
+              ><svg class="mobile-social-list-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <section class="section-title">
         <div class="container flex-container flex-direction-col">
-          <h1 class="header-1 white title">
-            Effective Solutions for Your Business
-          </h1>
+          <h1 class="white title">Effective Solutions for Your Business</h1>
           <button class="btn-1 white" data-modal-open>Order Service</button>
         </div>
       </section>
@@ -37,8 +185,8 @@
                   <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="header-3 features-header navy-blue">Strategy</h3>
-              <p class="slate">
+              <h3 class="features-header navy-blue">Strategy</h3>
+              <p class="features-text slate">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -49,8 +197,8 @@
                   <use xlink:href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="header-3 features-header navy-blue">Punctuality</h3>
-              <p class="slate">
+              <h3 class="features-header navy-blue">Punctuality</h3>
+              <p class="features-text slate">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -61,8 +209,8 @@
                   <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="header-3 features-header navy-blue">Diligence</h3>
-              <p class="slate">
+              <h3 class="features-header navy-blue">Diligence</h3>
+              <p class="features-text slate">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -73,8 +221,8 @@
                   <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="header-3 features-header navy-blue">Technologies</h3>
-              <p class="slate">
+              <h3 class="features-header navy-blue">Technologies</h3>
+              <p class="features-text slate">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -496,7 +644,14 @@
         </form>
       </div>
     </div>
-    <script defer src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
     <div id="footerContainer"></div>
   </body>

@@ -6,25 +6,38 @@
         <p class="logo navy-blue">STUDIO</p>
       </div>
     </a>
-    <nav>
-      <ul
-        class="body-medium clear-ul flex-container flex-direction-row header-nav-list"
+    <nav class="header-nav">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
+        <svg class="menu-toggle-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <ul class="body-medium clear-ul flex-direction-row header-nav-list">
         <li>
-          <a class="navy-blue header-link current" href="./index.html"
+          <a
+            class="navy-blue header-link header-nav-link current"
+            href="./index.html"
             >Studio</a
           >
         </li>
         <li>
-          <a class="navy-blue header-link" href="./portfolio.html">Portfolio</a>
+          <a
+            class="navy-blue header-link header-nav-link"
+            href="./portfolio.html"
+            >Portfolio</a
+          >
         </li>
         <li>
-          <a class="navy-blue header-link" href="#">Contacts</a>
+          <a class="navy-blue header-link header-nav-link" href="#">Contacts</a>
         </li>
       </ul>
     </nav>
     <address class="header-address">
-      <ul class="body clear-ul flex-container header-address-list">
+      <ul class="body clear-ul header-address-list">
         <li>
           <a class="slate header-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -40,4 +53,91 @@
   </div>
 </header>
 
-<link rel="stylesheet" href="./css/styles.css" />
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle-container js-close-menu">
+    <svg class="mobile-button-icon" width="8" height="8">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="mobile-nav">
+    <ul class="mobile-menu" id="mobile-menu">
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link current" href="index.html">Studio</a>
+      </li>
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="mobile-menu-li">
+        <a class="mobile-menu-link" href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-contacts">
+    <address class="mobile-menu-link-adr">
+      <ul class="mobile-contacts-list">
+        <li>
+          <a class="mobile-contacts-phone-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-contacts-email-link" href="mailto:info@dewstudio.com"
+            >info@dewstudio.com</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+  <div class="mobile-social">
+    <ul class="mobile-social-list">
+      <li class="mobile-social-list-li">
+        <a
+          class="mobile-social-list-link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to instagram.com"
+          ><svg class="mobile-social-list-icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-social-list-li">
+        <a
+          class="mobile-social-list-link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to twitter.com"
+          ><svg class="mobile-social-list-icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-social-list-li">
+        <a
+          class="mobile-social-list-link"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to facebook.com"
+          ><svg class="mobile-social-list-icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-social-list-li">
+        <a
+          class="mobile-social-list-link"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to linkedin.com"
+          ><svg class="mobile-social-list-icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
