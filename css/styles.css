@@ -1230,6 +1230,7 @@ ul {
 
   .footer-subscription-input {
     width: 264px;
+    opacity: 100%;
   }
 
   .footer-subscription-form {
@@ -1242,6 +1243,8 @@ ul {
 
   .footer-subscription-button {
     margin: 0 0 0 24px;
+    max-width: 165px;
+    width: 100%;
   }
 
   .subscription-container {
@@ -1249,7 +1252,7 @@ ul {
     align-items: start;
     justify-content: start;
     max-width: 453px;
-    margin-left: 80px;
+    margin-left: auto;
   }
 
   .footer-logo {
@@ -1264,7 +1267,7 @@ ul {
     justify-content: start;
     align-items: start;
     gap: 0px;
-    padding: 100px 0px 100px 156px;
+    padding: 100px 15px 100px 15px;
   }
 
   .social-footer {
