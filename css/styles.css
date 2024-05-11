@@ -115,8 +115,10 @@
 }
 
 .section-title {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/title-bg-mobile@1x.jpg);
   padding: 112px 0 112px 0;
   max-width: 425px;
@@ -126,8 +128,10 @@
 
 @media (min-resolution: 192px) {
   .section-title {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/title-bg-mobile@2x.jpg);
   }
 }
@@ -197,6 +201,13 @@
   position: relative;
   display: block;
   margin: auto;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-align: left;
 }
 
 .header-address-list {
@@ -481,7 +492,9 @@
   letter-spacing: 0.48px;
 }
 
-input[type='checkbox']:checked+.agreement-label-checkbox>.agreement-checkbox {
+input[type='checkbox']:checked
+  + .agreement-label-checkbox
+  > .agreement-checkbox {
   border-color: transparent;
   background-color: #404bbf;
   fill: #ffffff;
@@ -978,18 +991,22 @@ ul {
   color: #404bbf;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1158px) {
   .section-title {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/title-bg-tablet@1x.jpg);
-      max-width: 768px;
+    max-width: 768px;
   }
 
   @media (min-resolution: 192px) {
     .section-title {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
         url(../images/title-bg-tablet@2x.jpg);
     }
   }
@@ -1095,20 +1112,28 @@ ul {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1158px) {
   .section-title {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/title-bg-desk@2x.jpg);
-      max-width: 1440px;
+    max-width: 1158px;
   }
 
   @media (min-resolution: 192px) {
     .section-title {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
         url(../images/title-bg-desk@2x.jpg);
     }
+  }
+
+  .container {
+    padding: 0 15px;
   }
 
   .modal {
