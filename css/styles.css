@@ -5,6 +5,8 @@
 
 .container {
   padding: 0px 16px 0px 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -121,12 +123,11 @@
     ),
     url(../images/title-bg-mobile@1x.jpg);
   padding: 112px 0 112px 0;
-  max-width: 425px;
   margin: auto;
   background-size: cover;
 }
 
-@media (min-resolution: 192px) {
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192px) {
   .section-title {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -717,7 +718,7 @@ ul {
 
 .mobile-social-list {
   display: flex;
-  gap: 56px;
+  gap: 26px;
 }
 
 .mobile-social-list-li {
@@ -1001,7 +1002,7 @@ ul {
     max-width: 768px;
   }
 
-  @media (min-resolution: 192px) {
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192px) {
     .section-title {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1064,12 +1065,6 @@ ul {
     gap: 72px 24px;
   }
 
-  .footer .container {
-    justify-content: start;
-    gap: 72px 24px;
-    padding-left: 108px;
-  }
-
   .footer-subscription-input {
     max-width: 264px;
   }
@@ -1081,7 +1076,7 @@ ul {
   .footer .container {
     align-items: start;
     gap: 72px 24px;
-    padding: 96px auto 96px auto;
+    width: 584px;
   }
 
   .social-text {
@@ -1118,11 +1113,13 @@ ul {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/title-bg-desk@2x.jpg);
+      url(../images/title-bg-desk@1x.jpg);
     max-width: 1158px;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 
-  @media (min-resolution: 192px) {
+  @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192px) {
     .section-title {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1134,6 +1131,7 @@ ul {
 
   .container {
     padding: 0 15px;
+    max-width: 1158px;
   }
 
   .modal {
@@ -1157,16 +1155,17 @@ ul {
     display: flex;
   }
 
+  .header-address-link {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
   .menu-toggle {
     display: none;
   }
 
   .header-nav {
     margin-left: 76px;
-  }
-
-  .header .container {
-    padding: 0px 156px;
   }
 
   .title {
@@ -1252,7 +1251,7 @@ ul {
     align-items: start;
     justify-content: start;
     max-width: 453px;
-    margin-left: auto;
+    margin-left: 80px;
   }
 
   .footer-logo {
@@ -1267,7 +1266,7 @@ ul {
     justify-content: start;
     align-items: start;
     gap: 0px;
-    padding: 100px 15px 100px 15px;
+    width: 1158px;
   }
 
   .social-footer {
